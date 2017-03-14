@@ -75,7 +75,6 @@ xKey = keyboard_check_pressed(ord("X")) || gamepad_button_check_pressed(0, gp_fa
 
 Face_Direction = leftKey + rightKey; //Cancels out if both are pressed
 hsp = Face_Direction * normalSpeed; 
-
 if(vsp &lt; 10){
     vsp += normalGravity;
 }
