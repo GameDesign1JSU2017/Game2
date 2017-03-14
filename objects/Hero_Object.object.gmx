@@ -40,6 +40,8 @@ visible = true
 Health = 50
 hsp = 0; 
 vsp = 0; 
+
+gamepad_set_axis_deadzone(0, 0.2);
 </string>
           </argument>
         </arguments>
@@ -63,13 +65,13 @@ vsp = 0;
           <argument>
             <kind>1</kind>
             <string>//Check for Inputs. Returns a 1 if pressed, is 0 otherwise. 
-leftKey = -keyboard_check(vk_left); //Negative
-rightKey = keyboard_check(vk_right);
+leftKey = -(keyboard_check(vk_left) || (gamepad_axis_value(0, gp_axislh) &lt; 0)); //Negative
+rightKey = keyboard_check(vk_right) || (gamepad_axis_value(0, gp_axislh) &gt; 0);
 upKey = keyboard_check(vk_up);
 downKey = keyboard_check(vk_down);
 spaceKey = keyboard_check_pressed(vk_space);
 zKey = keyboard_check_pressed(ord("Z"));
-xKey = keyboard_check_pressed(ord("X"));
+xKey = keyboard_check_pressed(ord("X")) || gamepad_button_check_pressed(0, gp_face1) // jump;
 
 Face_Direction = leftKey + rightKey; //Cancels out if both are pressed
 hsp = Face_Direction * normalSpeed; 
