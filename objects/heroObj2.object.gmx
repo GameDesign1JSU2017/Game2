@@ -25,7 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player = 1
+            <string>image_speed = 0.2
+Face_Direction = 1;
+normalSpeed = 8
+jumpSpeed = 23
+normalGravity = 1.5
+Collionstate = "ground"
+Roll_Shooting = "false"
+Hurt_State = "false"
+state = "stand"
+PowerUp = 0
+depth = -1
+visible = true
+Health = 50
+hsp = 0; 
+vsp = 0; 
+player = 1
+
+gamepad_set_axis_deadzone(player, 0.2);
 </string>
           </argument>
         </arguments>

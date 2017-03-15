@@ -25,11 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(gamepad_is_connected(0) and instance_number(Hero_Object) &lt; 1){
+            <string>if(gamepad_get_device_count() == 1){
     instance_create(heroSpawner.x,heroSpawner.y,Hero_Object)
 }
-if(gamepad_is_connected(1) and instance_number(heroObj2)&lt;1){
+else if(gamepad_get_device_count() == 2){
+    instance_create(heroSpawner.x,heroSpawner.y,Hero_Object)
     instance_create(heroSpawner.x,heroSpawner.y,heroObj2)
+}
+else{
+    instance_create(heroSpawner.x,heroSpawner.y,Hero_Object)
 }
 </string>
           </argument>
