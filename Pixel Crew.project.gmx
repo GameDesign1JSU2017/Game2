@@ -12,15 +12,20 @@
     </sprites>
     <sprites name="World Sprites">
       <sprite>sprites\Wall_Sprite</sprite>
+      <sprite>sprites\jetBootsSprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\getConnected.gml</script>
+  </scripts>
   <objects name="objects">
     <objects name="Player Objects">
       <object>objects\Hero_Object</object>
       <object>objects\heroObj2</object>
       <object>objects\heroParent</object>
+      <object>objects\jetBoots</object>
     </objects>
     <objects name="World Objects">
       <object>objects\Wall_Object</object>
