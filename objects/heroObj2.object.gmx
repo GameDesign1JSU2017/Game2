@@ -25,24 +25,59 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.2
-Face_Direction = 1;
-normalSpeed = 8
-jumpSpeed = 23
-normalGravity = 1.5
-Collionstate = "ground"
-Roll_Shooting = "false"
-Hurt_State = "false"
-state = "stand"
-PowerUp = 0
-depth = -1
-visible = true
-Health = 50
-hsp = 0; 
-vsp = 0; 
+            <string>event_inherited()
 player = 1
 
-gamepad_set_axis_deadzone(player, 0.2);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited()
+if((keyboard_check(vk_space) || gamepad_button_check(player, gp_face3)) and jetBootsActive == true){
+    vspeed = -30
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="jetBoots">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>jetBootsActive = true
 </string>
           </argument>
         </arguments>
