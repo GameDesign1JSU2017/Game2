@@ -19,6 +19,9 @@
   <objects name="objects">
     <objects name="Player Objects">
       <object>objects\Hero_Object</object>
+      <object>objects\heroSpawner</object>
+      <object>objects\heroObj2</object>
+      <object>objects\heroParent</object>
     </objects>
     <objects name="World Objects">
       <object>objects\Wall_Object</object>
