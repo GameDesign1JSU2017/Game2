@@ -83,6 +83,7 @@
     <instance objName="Wall_Object" x="384" y="512" name="inst_149D891F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Hero_Object" x="576" y="480" name="inst_50E45182" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="heroObj2" x="896" y="480" name="inst_A68A79FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="jetBoots" x="352" y="416" name="inst_71FC51B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -9,6 +9,7 @@
     <sprites name="Player Sprites">
       <sprite>sprites\Roll_Stand_Sprite</sprite>
       <sprite>sprites\Hero_Sprite</sprite>
+      <sprite>sprites\RoboWalk</sprite>
     </sprites>
     <sprites name="World Sprites">
       <sprite>sprites\Wall_Sprite</sprite>
