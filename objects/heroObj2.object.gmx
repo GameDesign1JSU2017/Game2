@@ -79,7 +79,7 @@ if((keyboard_check(vk_space) || gamepad_button_check(player, gp_face3)) and jetB
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="jetBoots">
+    <event eventtype="4" ename="Hero_Object">
       <action>
         <libid>1</libid>
         <id>603</id>
