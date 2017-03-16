@@ -25,25 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*image_speed = 0.2
-Face_Direction = 1;
-normalSpeed = 8
-jumpSpeed = 23
-normalGravity = 1.5
-Collionstate = "ground"
-Roll_Shooting = "false"
-Hurt_State = "false"
-state = "stand"
-PowerUp = 0
-depth = -1
-visible = true
-Health = 50
-hsp = 0; 
-vsp = 0; 
-*/
-event_inherited(); 
+            <string>event_inherited()
 player = 1
-
 
 
 </string>
@@ -79,7 +62,7 @@ if((keyboard_check(vk_space) || gamepad_button_check(player, gp_face3)) and jetB
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Hero_Object">
+    <event eventtype="4" ename="jetBoots">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -97,9 +80,6 @@ if((keyboard_check(vk_space) || gamepad_button_check(player, gp_face3)) and jetB
           <argument>
             <kind>1</kind>
             <string>jetBootsActive = true
-
-
-
 </string>
           </argument>
         </arguments>

@@ -8,7 +8,7 @@
   <parentName>heroParent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -31,18 +31,12 @@ if((keyboard_check(vk_space) || gamepad_button_check(player, gp_face3)) and jetB
     vspeed = -30
     jetBootsPower -= 10
 }
-
-
-player = 0
-rock = false; 
-
-
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="4" ename="jetBoots">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -59,22 +53,7 @@ rock = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited(); 
-rockKey = gamepad_button_check_pressed(player, gp_shoulderlb);
-
-if(rockKey){
-    rock = true;
-    sprite_index = rockSprite; 
-}
-if(gamepad_button_check_released(player, gp_shoulderlb)){
-    rock = false;
-    sprite_index = Hero_Sprite;  
-}
-
-if(rock = true){
-    hspeed = 0; 
-    vspeed = 0; 
-}
+            <string>jetBootsActive = true
 </string>
           </argument>
         </arguments>

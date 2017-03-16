@@ -9,29 +9,26 @@
     <sprites name="Player Sprites">
       <sprite>sprites\Roll_Stand_Sprite</sprite>
       <sprite>sprites\Hero_Sprite</sprite>
-      <sprite>sprites\aimSprite</sprite>
-      <sprite>sprites\lightningSprite</sprite>
-      <sprite>sprites\rockSprite</sprite>
     </sprites>
     <sprites name="World Sprites">
       <sprite>sprites\Wall_Sprite</sprite>
-      <sprite>sprites\cameraSprite</sprite>
+      <sprite>sprites\jetBootsSprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\getConnected.gml</script>
+  </scripts>
   <objects name="objects">
     <objects name="Player Objects">
       <object>objects\Hero_Object</object>
       <object>objects\heroObj2</object>
       <object>objects\heroParent</object>
-      <object>objects\aimObject</object>
-      <object>objects\lightningObject</object>
-      <object>objects\rockObject</object>
+      <object>objects\jetBoots</object>
     </objects>
     <objects name="World Objects">
       <object>objects\Wall_Object</object>
-      <object>objects\cameraObject</object>
     </objects>
   </objects>
   <rooms name="rooms">
