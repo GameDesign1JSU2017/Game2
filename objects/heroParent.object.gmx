@@ -81,7 +81,7 @@ Face_Direction = leftKey + rightKey; //Cancels out if both are pressed
 hsp = Face_Direction * normalSpeed; 
 //jetboots regeneration
 if((!keyboard_check(vk_space) || !gamepad_button_check(player, gp_face3)) and jetBootsPower &lt; 50){
-    jetBootsPower += 0.5
+    jetBootsPower += 5
 } 
 
 if(vsp &lt; 10){
