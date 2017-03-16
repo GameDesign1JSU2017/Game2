@@ -54,6 +54,7 @@ player = 1
             <string>event_inherited()
 if((keyboard_check(vk_space) || gamepad_button_check(player, gp_face3)) and jetBootsActive == true){
     vspeed = -30
+    jetBootsPower -= 10
 }
 </string>
           </argument>
